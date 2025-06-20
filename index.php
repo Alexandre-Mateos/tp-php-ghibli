@@ -15,7 +15,8 @@ $arrayGhibli = json_decode($ghibli, true);
     <title>Document</title>
 </head>
 <body>
-<div class="container">
+<?php include 'header.php';?>
+<div class="container py-5">
     <div class="row">
           <?php foreach ($arrayGhibli as $movie) : ?>
               <div class="col-md-4 p-2">

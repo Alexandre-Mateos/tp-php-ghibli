@@ -22,7 +22,9 @@ $ghibliArray = json_decode($ghibli, true);
 //var_dump($ghibliArray);
 ?>
 
-<body class="container">
+<body>
+<?php include 'header.php';?>
+<div class="container">
 <h1 class="text-center pt-2"> <?php echo $ghibliArray['title'] ?></h1>
 <section>
       <p class="text-center"><?php echo $ghibliArray['original_title'] ?></p>
@@ -58,7 +60,7 @@ $ghibliArray = json_decode($ghibli, true);
 
 
 </section>
-
+</div>
 
 </body>
 </html>
