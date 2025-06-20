@@ -19,7 +19,7 @@
 
 <?php $ghibli = file_get_contents('https://ghibliapi.vercel.app/films/' . $_GET['film_id']);
 $ghibliArray = json_decode($ghibli, true);
-//var_dump($ghibliArray);
+var_dump($ghibliArray);
 ?>
 
 <body>
